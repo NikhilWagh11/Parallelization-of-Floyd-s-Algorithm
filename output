@@ -1,0 +1,50 @@
+aniket@aniket-inspiron-3542:~/Desktop$ mpiexec -n <number of processes> ./mpi_floyd
+bash: number: No such file or directory
+aniket@aniket-inspiron-3542:~/Desktop$ mpicc -g -Wall -o mpi_floyd mpi_floyd.caniket@aniket-inspiron-3542:~/Desktop$ ./mpi_floyd
+How many vertices?
+4
+Enter the local_matrix
+0 5 20 10
+45 0 15 5
+30 35 0 15
+15 20 5 0
+
+We got
+0 5 20 10 
+45 0 15 5 
+30 35 0 15 
+15 20 5 0 
+
+The solution is:
+0 5 15 10 
+20 0 10 5 
+30 35 0 15 
+15 20 5 0 
+
+
+
+aniket@aniket-inspiron-3542:~/Desktop$ ./mpi_floyd
+How many vertices?
+5
+Enter the local_matrix
+0 2 10 5 7
+3 0 13 8 10
+7 4 0 12 14
+12 9 5 0 0
+10 7 3 15 0
+
+We got
+0 2 10 5 7 
+3 0 13 8 10 
+7 4 0 12 14 
+12 9 5 0 0 
+10 7 3 15 0 
+
+The solution is:
+0 2 8 5 5 
+3 0 11 8 8 
+7 4 0 12 12 
+10 7 3 0 0 
+10 7 3 15 0 
+aniket@aniket-inspiron-3542:~/Desktop$ 
+
